@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Youth Night</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #f1f5f9;
+      cursor: url('https://cur.cursors-4u.net/cursors/cur-13/cur1195.cur'), auto;
+      overflow-x: hidden;
+    }
+    header {
+      background-color: rgba(15, 23, 42, 0.85);
+      padding: 1.5rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      backdrop-filter: blur(10px);
+    }
+    header h1 {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 2rem;
+      color: #facc15;
+      letter-spacing: 2px;
+      text-shadow: 0 0 5px #facc15;
+    }
+    nav a {
+      margin-left: 2rem;
+      text-decoration: none;
+      color: #cbd5e1;
+      font-weight: 500;
+      transition: color 0.3s, transform 0.3s;
+    }
+    nav a:hover {
+      color: #38bdf8;
+      transform: scale(1.1);
+    }
+    .hero {
+      height: 100vh;
+      background: url('your-background.jpg') center/cover no-repeat;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 0 1rem;
+      position: relative;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+    .hero h2 {
+      font-size: 3.5rem;
+      color: #facc15;
+      text-shadow: 0 0 15px #facc15;
+      font-family: 'Orbitron', sans-serif;
+      z-index: 2;
+      position: relative;
+      animation: glitch 2s infinite alternate;
+    }
+    @keyframes glitch {
+      0% { transform: translate(0); }
+      20% { transform: translate(-2px, 2px); }
+      40% { transform: translate(-2px, -2px); }
+      60% { transform: translate(2px, 2px); }
+      80% { transform: translate(2px, -2px); }
+      100% { transform: translate(0); }
+    }
+    .section {
+      padding: 5rem 2rem;
+      max-width: 1100px;
+      margin: auto;
+      text-align: center;
+    }
+    .section h3 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      color: #38bdf8;
+      font-family: 'Orbitron', sans-serif;
+    }
+    .section p {
+      font-size: 1.1rem;
+      color: #cbd5e1;
+      max-width: 700px;
+      margin: 0 auto 2rem;
+    }
+    .btn {
+      background: #facc15;
+      color: #1e293b;
+      padding: 0.75rem 2rem;
+      border-radius: 30px;
+      border: none;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #facc15;
+    }
+    iframe {
+      width: 100%;
+      max-width: 100%;
+      height: 450px;
+      border: 0;
+      border-radius: 10px;
+      margin-top: 2rem;
+    }
+    footer {
+      background: #0f172a;
+      padding: 2rem;
+      text-align: center;
+      color: #64748b;
+      font-size: 0.9rem;
+    }
+    .icons {
+      margin-top: 2rem;
+    }
+    .icons i {
+      margin: 0 10px;
+      font-size: 1.5rem;
+      color: #facc15;
+      transition: transform 0.3s;
+    }
+    .icons i:hover {
+      transform: scale(1.2);
+      color: #38bdf8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Youth Night</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#program">Program</a>
+      <a href="#vote">Vote</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h2 data-aos="fade-up">Welcome to the Ultimate Youth Night</h2>
+  </section>
+
+  <section id="about" class="section" data-aos="zoom-in">
+    <h3>About the Event</h3>
+    <p>Join us for a powerful night of praise, worship, motivation, fun, and movies! It's more than just a service—it's an unforgettable experience filled with energy, love, and connection.</p>
+  </section>
+
+  <section id="program" class="section" data-aos="fade-up">
+    <h3>Event Program</h3>
+    <p><strong>6:30 PM – 8:00 PM:</strong> Best Club Voting (Parents Included)</p>
+    <p><strong>8:00 PM till Dawn:</strong> Youth Night Service (Worship, Movie Time, Games, and More)</p>
+  </section>
+
+  <section id="vote" class="section" data-aos="fade-up">
+    <h3>Vote for the Best Club</h3>
+    <p>Click the button below to cast your vote and support your favorite club!</p>
+    <a href="voting.html"><button class="btn">Vote Now</button></a>
+  </section>
+
+  <section id="location" class="section" data-aos="fade-up">
+    <h3>Event Location</h3>
+    <p>We’re gathering at Bangwe CCAP Church. Find us on the map below.</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d545.116126861858!2d35.09545765370738!3d-15.840283036014739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x18d849d6473202c9%3A0x90b70a601d748ee0!2sBangwe%20CCAP%20church!5e1!3m2!1sen!2smw!4v1746216808390!5m2!1sen!2smw" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  </section>
+
+  <footer>
+    <div class="icons">
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-facebook"></i>
+      <i class="fab fa-twitter"></i>
+      <i class="fas fa-envelope"></i>
+    </div>
+    <p>&copy; 2025 Youth Night. All rights reserved.</p>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>AOS.init();</script>
+</body>
+</html>
